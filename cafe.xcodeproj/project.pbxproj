@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		248DE009258B1D8B009F4AEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248DE008258B1D8B009F4AEF /* AppDelegate.swift */; };
 		248DE00B258B1D8B009F4AEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248DE00A258B1D8B009F4AEF /* SceneDelegate.swift */; };
-		248DE00D258B1D8B009F4AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248DE00C258B1D8B009F4AEF /* ViewController.swift */; };
 		248DE010258B1D8B009F4AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248DE00E258B1D8B009F4AEF /* Main.storyboard */; };
 		248DE012258B1D8F009F4AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248DE011258B1D8F009F4AEF /* Assets.xcassets */; };
 		248DE015258B1D8F009F4AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248DE013258B1D8F009F4AEF /* LaunchScreen.storyboard */; };
 		248DE020258B1D8F009F4AEF /* cafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248DE01F258B1D8F009F4AEF /* cafeTests.swift */; };
 		248DE02B258B1D8F009F4AEF /* cafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248DE02A258B1D8F009F4AEF /* cafeUITests.swift */; };
+		24CBDFC72594B1990075BE3A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBDFC62594B1990075BE3A /* WebViewController.swift */; };
+		24CBDFCD2594B3200075BE3A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CBDFCC2594B3200075BE3A /* WebKit.framework */; };
+		24FA45A4258C9AEF0088C4B6 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA45A3258C9AEF0088C4B6 /* Cafe.swift */; };
+		24FA45A9258C9BDF0088C4B6 /* CafeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA45A8258C9BDF0088C4B6 /* CafeTableViewController.swift */; };
+		24FA45AE2591C02B0088C4B6 /* CafeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA45AD2591C02B0088C4B6 /* CafeDetailViewController.swift */; };
+		24FA45B42591D45F0088C4B6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA45B32591D45F0088C4B6 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		248DE005258B1D8B009F4AEF /* cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		248DE008258B1D8B009F4AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		248DE00A258B1D8B009F4AEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		248DE00C258B1D8B009F4AEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		248DE00F258B1D8B009F4AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		248DE011258B1D8F009F4AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		248DE014258B1D8F009F4AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		248DE026258B1D8F009F4AEF /* cafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		248DE02A258B1D8F009F4AEF /* cafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cafeUITests.swift; sourceTree = "<group>"; };
 		248DE02C258B1D8F009F4AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CBDFC62594B1990075BE3A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		24CBDFCC2594B3200075BE3A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		24FA45A3258C9AEF0088C4B6 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		24FA45A8258C9BDF0088C4B6 /* CafeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewController.swift; sourceTree = "<group>"; };
+		24FA45AD2591C02B0088C4B6 /* CafeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailViewController.swift; sourceTree = "<group>"; };
+		24FA45B32591D45F0088C4B6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CBDFCD2594B3200075BE3A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				248DE01E258B1D8F009F4AEF /* cafeTests */,
 				248DE029258B1D8F009F4AEF /* cafeUITests */,
 				248DE006258B1D8B009F4AEF /* Products */,
+				24CBDFCB2594B3200075BE3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +111,14 @@
 		248DE007258B1D8B009F4AEF /* cafe */ = {
 			isa = PBXGroup;
 			children = (
+				24FA45AD2591C02B0088C4B6 /* CafeDetailViewController.swift */,
+				24CBDFC62594B1990075BE3A /* WebViewController.swift */,
+				24FA45B32591D45F0088C4B6 /* MapViewController.swift */,
 				248DE008258B1D8B009F4AEF /* AppDelegate.swift */,
 				248DE00A258B1D8B009F4AEF /* SceneDelegate.swift */,
-				248DE00C258B1D8B009F4AEF /* ViewController.swift */,
+				24FA45A3258C9AEF0088C4B6 /* Cafe.swift */,
 				248DE00E258B1D8B009F4AEF /* Main.storyboard */,
+				24FA45A8258C9BDF0088C4B6 /* CafeTableViewController.swift */,
 				248DE011258B1D8F009F4AEF /* Assets.xcassets */,
 				248DE013258B1D8F009F4AEF /* LaunchScreen.storyboard */,
 				248DE016258B1D8F009F4AEF /* Info.plist */,
@@ -126,6 +142,14 @@
 				248DE02C258B1D8F009F4AEF /* Info.plist */,
 			);
 			path = cafeUITests;
+			sourceTree = "<group>";
+		};
+		24CBDFCB2594B3200075BE3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24CBDFCC2594B3200075BE3A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248DE00D258B1D8B009F4AEF /* ViewController.swift in Sources */,
+				24FA45A4258C9AEF0088C4B6 /* Cafe.swift in Sources */,
+				24FA45A9258C9BDF0088C4B6 /* CafeTableViewController.swift in Sources */,
+				24FA45AE2591C02B0088C4B6 /* CafeDetailViewController.swift in Sources */,
 				248DE009258B1D8B009F4AEF /* AppDelegate.swift in Sources */,
+				24CBDFC72594B1990075BE3A /* WebViewController.swift in Sources */,
 				248DE00B258B1D8B009F4AEF /* SceneDelegate.swift in Sources */,
+				24FA45B42591D45F0088C4B6 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3KTNNPQ7H;
 				INFOPLIST_FILE = cafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3KTNNPQ7H;
 				INFOPLIST_FILE = cafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

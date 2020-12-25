@@ -1,9 +1,4 @@
-import UIKit
 import Foundation
-
-//class Cafe {
-//    static var shareData = [SearchResponse]()
-//}
 
 struct Cafe: Decodable {
     var id: String?
@@ -26,10 +21,6 @@ struct Cafe: Decodable {
     var open_time: String?
 }
 
-class ViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-    }
+class Cafee {
+    static var shareData = [Cafe]()
 }
