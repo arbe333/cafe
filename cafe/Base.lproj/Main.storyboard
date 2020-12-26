@@ -11,7 +11,6 @@
         <!--Item-->
         <scene sceneID="D4e-fx-63B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HE8-xB-yL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="occ-rc-gWu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="G4o-Ka-wvP"/>
                     <toolbarItems/>
@@ -24,21 +23,26 @@
                         <segue destination="awP-yU-pZq" kind="relationship" relationship="rootViewController" id="Z8S-50-DpX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HE8-xB-yL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2349.275362318841" y="59.598214285714285"/>
         </scene>
         <!--Cafe Table View Controller-->
         <scene sceneID="n0J-Lo-MdS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zzm-14-Ffj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="awP-yU-pZq" customClass="CafeTableViewController" customModule="cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wVi-47-C8v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="MJ7-Nb-G4c">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cafeCell" textLabel="Bfa-0W-Gw4" detailTextLabel="PtS-8R-rnr" rowHeight="87" style="IBUITableViewCellStyleSubtitle" id="dUD-Sr-mmV">
-                                <rect key="frame" x="0.0" y="28" width="414" height="87"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dUD-Sr-mmV" id="LqB-ta-DMM">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -72,7 +76,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="GY7-ZK-Bfp"/>
+                    <connections>
+                        <outlet property="searchBar" destination="MJ7-Nb-G4c" id="8Xu-iJ-FdB"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzm-14-Ffj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3183" y="60"/>
         </scene>

@@ -5,8 +5,6 @@
 //  Created by arbe on 2020/12/22.
 //
 
-// 代辦：url 變官網連結
-
 import UIKit
 
 class CafeDetailViewController: UIViewController {
@@ -29,7 +27,6 @@ class CafeDetailViewController: UIViewController {
         }
         return controller
     }
-    
     
     @IBOutlet weak var NameLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -64,7 +61,7 @@ class CafeDetailViewController: UIViewController {
         let percentagePath = UIBezierPath(arcCenter: CGPoint(x: lineWidth + radius, y: lineWidth + radius), radius: radius, startAngle: aDegree * startDegree, endAngle: aDegree * (startDegree + 360 * percentage / 100), clockwise: true)
         let percentageLayer = CAShapeLayer()
         percentageLayer.path = percentagePath.cgPath
-        percentageLayer.strokeColor  = UIColor(red: 218/256, green: 218/256, blue: 218/256, alpha: 1).cgColor
+        percentageLayer.strokeColor = UIColor(red: 218/256, green: 218/256, blue: 218/256, alpha: 1).cgColor
         percentageLayer.lineWidth = lineWidth
         percentageLayer.fillColor = UIColor.clear.cgColor
         percentageLayer.lineCap = CAShapeLayerLineCap.round // 讓端點是圓滑的
@@ -73,6 +70,7 @@ class CafeDetailViewController: UIViewController {
         label.textAlignment = .center
         label.text = text
         label.font = .systemFont(ofSize: 32)
+        label.textColor = UIColor(red: 218/256, green: 218/256, blue: 218/256, alpha: 1)
         
         let rankingView = UIView()
         rankingView.layer.backgroundColor = UIColor.clear.cgColor
@@ -97,11 +95,9 @@ class CafeDetailViewController: UIViewController {
         }
         openTimeLabel.text = cafe.open_time!
         mrtLabel.text = cafe.mrt
-//        urlLabel.text = "網址: \(String(cafe.url!))"
         
         // 自動換行
         NameLabel.numberOfLines = 0
-//        urlLabel.numberOfLines = 0
         
         if let wifi = cafe.wifi,
            let seat = cafe.seat,
