@@ -13,7 +13,7 @@ class CafeTableViewController: UITableViewController {
     
     var searchedCafes = [Cafe]()
     var searching = false
-    
+
     func fetchItems() {
         let urlStr = "https://cafenomad.tw/api/v1.2/cafes"
         
@@ -85,7 +85,7 @@ class CafeTableViewController: UITableViewController {
 
 extension CafeTableViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
+        // search 邏輯寫在這
         searchedCafes = Cafee.shareData.filter { $0.name!.lowercased().prefix(searchText.count) == searchText.lowercased() }
         searching = true
         tableView.reloadData()
